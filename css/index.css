@@ -1,3 +1,150 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*BASE CODE OF PROJECT*/
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+body {
+	width: 876px;
+	margin: auto;
+}
+@media (max-width: 800px) {
+  body {
+  	width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+  	width: 95%;
+  }
+}
+
+/*The header and sub header banner area*/
+header {
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid black;
+}
+
+header .floatnav {
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 876px;
+	display: flex;
+}
+
+nav {
+	width: 876px;
+	display: flex;
+	justify-content: space-between;
+	margin: 35px 0px;
+	padding-right: 85px;
+}
+
+nav a {
+	color: silver;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 14px;
+	text-shadow: 2px 1px white;
+	border: 1px solid white;
+}
+
+nav a:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+.logo {
+/*	float: right;*/
+	margin: 30px 0px;
+}
+
+@media (max-width: 800px) {
+  header .floatnav {
+    flex-flow: column-reverse;
+    justify-content: center;
+  }
+  .logo {
+    margin: 30px auto 10px auto;;
+  }
+}
+@media (max-width: 500px) {}
 
 
+
+
+/*
+@media (max-width: 800px) {}
+@media (max-width: 500px) {}
+
+@media only screen and (max-device-width: 800px)  {}
+@media only screen and (max-device-width: 500px)  {}
+*/
