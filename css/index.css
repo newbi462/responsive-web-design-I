@@ -123,7 +123,6 @@ nav a:hover {
 }
 
 .logo {
-/*	float: right;*/
 	margin: 30px 0px;
 }
 
@@ -219,6 +218,78 @@ nav a:hover {
     margin: 20px auto 30px auto;
   }
 }
+
+
+/*main content*/
+.area1 a, .area2 a {
+	color: black;
+	text-decoration: none;
+}
+.area1 a:hover, .area2 a:hover {
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
+}
+
+.area1 {
+	display: flex;
+}
+
+.area1 div {
+	margin: 30px 0px;
+}
+
+.area2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.area2 div {
+	margin: 30px 0px;
+	width: 288px;
+}
+
+@media (max-width: 800px) {
+  .area1 {
+  	justify-content: space-around;
+  }
+  .area1 div {
+  	margin: 30px 5%;
+    width: 95%;
+  }
+  .area2 {
+  	display: flex;
+  	justify-content: space-around;
+  }
+  .area2 div {
+  	margin: 30px 5%;
+    padding: 0 20px 0 0;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .area1 {
+  	flex-flow: column;
+    margin: 30px 0;
+  }
+  .area1 div {
+  	margin: 30px 0;
+    width: 100%;
+  }
+  .middle-img {
+    width: 100%;
+  }
+  .area2 {
+  	flex-flow: column;
+  }
+  .area2 div {
+  	margin: 30px 0;
+    width: 100%;
+}
+
+
+/*Footer*/
+
+
 
 
 
