@@ -127,16 +127,98 @@ nav a:hover {
 	margin: 30px 0px;
 }
 
+.subheader {
+	display: inline-block;
+	width: 100%;
+	margin: 115px 0 0 0
+}
+
+.subheader div {
+	width: 300px;
+	display: inline-block;
+	margin: 70px 10px 50px 120px;
+	text-align: center;
+	font-size: 78px;
+}
+
+.subheader div span {
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 6px 25px;
+	margin: 0px auto;
+	display: block;
+	width: 155px;
+	box-sizing: border-box;
+}
+
+.subheader div a {
+	text-decoration: none;
+	color: black;
+}
+
+.subheader div span:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+.subheader img {
+	float: right;
+}
+
 @media (max-width: 800px) {
   header .floatnav {
+    width: 100%;
     flex-flow: column-reverse;
     justify-content: center;
   }
+  header .floatnav a {
+    margin: 0 auto;
+  }
   .logo {
-    margin: 30px auto 10px auto;;
+    margin: 20px auto 10px auto;
+  }
+  nav {
+    width: 100%;
+    padding: 0 2% 0 0;
+    margin: 0;
+  }
+
+  .subheader {
+    display: flex;
+    justify-content: center;
+  }
+  .subheader div {
+    margin: 40px auto 30px auto;
+  }
+  .subheader img {
+  	display: none;
+  }
+
+}
+@media (max-width: 500px) {
+  nav {
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  nav a {
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .subheader {
+    margin-top: 350px;
+  }
+  .subheader div {
+    margin: 20px auto 30px auto;
   }
 }
-@media (max-width: 500px) {}
 
 
 
@@ -145,6 +227,6 @@ nav a:hover {
 @media (max-width: 800px) {}
 @media (max-width: 500px) {}
 
-@media only screen and (max-device-width: 800px)  {}
-@media only screen and (max-device-width: 500px)  {}
+@media only screen and (max-device-width: 800px) {}
+@media only screen and (max-device-width: 500px) {}
 */
