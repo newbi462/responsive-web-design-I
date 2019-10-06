@@ -269,6 +269,42 @@ nav a:hover {
 	width: 288px;
 }
 
+.area3 {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.area3 .itembox {
+	background: #f4f3f4;
+	border: 1px solid black;
+	width: 415px;
+	padding: 20px;
+	margin: 20px 0;/*this 0 is over riding my responsinve*/
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.area3 .itembox a {
+	border: 1px solid black;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	padding: 8px;
+	margin-top: 20px;
+	width: 120px;
+	font-size: 0.75em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.area3 .itembox a:hover {
+	border: 1px solid #18CAE6;
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
+}
+
 @media (max-width: 800px) {
   .area1 {
   	justify-content: space-around;
@@ -285,6 +321,10 @@ nav a:hover {
   	margin: 30px 5%;
     padding: 0 20px 0 0;
     width: 95%;
+  }
+
+  .area3 .itembox {
+    width: 48%
   }
 }
 @media (max-width: 500px) {
@@ -305,6 +345,10 @@ nav a:hover {
   .area2 div {
   	margin: 30px 0;
     width: 100%;
+  }
+  .area3 .itembox {
+    width: 97%;
+    margin: 15px auto;
   }
 }
 
@@ -338,8 +382,51 @@ footer .copyright {
 	width: 200px;
 }
 
-@media (max-width: 800px) {}
-@media (max-width: 500px) {}
+footer .itembox {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+footer .itembox .arealeft {
+	width: 415px;
+	margin: 10px 0 40px 0;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+footer .itembox .arealeft ul {
+	list-style-type: square;
+	padding: 20px;
+}
+footer .itembox .arealeft ul li {
+	padding: 7px;
+}
+
+@media (max-width: 800px) {
+  footer .itembox .arealeft {
+  	width: 46%;
+  }
+  footer .itembox .arearight {
+  	width: 46%;
+    display: flex;
+    align-items: center;
+  }
+  footer .itembox .services-info-img {
+  	width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  footer .itembox {
+  	flex-flow: column-reverse;
+  }
+  footer .itembox .arealeft {
+  	width: 100%;
+  }
+  footer .itembox .arearight {
+  	width: 100%;
+  }
+}
 
 
 /*
