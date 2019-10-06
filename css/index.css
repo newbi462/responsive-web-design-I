@@ -97,6 +97,16 @@ header .floatnav {
 	display: flex;
 }
 
+header .services-header-img {
+	margin: 107px 0 0 0;
+	width: 876px;
+}
+
+header .h1notmian {
+	font-size: 30px;
+	margin: 25px 0 15px 0;
+}
+
 nav {
 	width: 876px;
 	display: flex;
@@ -175,6 +185,10 @@ nav a:hover {
   header .floatnav a {
     margin: 0 auto;
   }
+  header .services-header-img {
+  	width: 100%;
+  }
+
   .logo {
     margin: 20px auto 10px auto;
   }
@@ -197,6 +211,13 @@ nav a:hover {
 
 }
 @media (max-width: 500px) {
+  header .services-header-img {
+  	margin: 350px 0 0 0;
+  }
+  header .h1notmian {
+  	font-size: 30px;
+  	margin: 20px 0 10px 0;
+  }
   nav {
     padding: 0;
     margin: 0;
@@ -284,14 +305,41 @@ nav a:hover {
   .area2 div {
   	margin: 30px 0;
     width: 100%;
+  }
 }
 
 
 /*Footer*/
+footer {
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
 
+	margin: 20px 0px;
+	border-top: 1px solid black;
 
+	padding: 30px 0px;
+}
 
+footer address {
+	width: 175px;
 
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+}
+
+footer address span {
+	margin: 1em 0 0 0;
+}
+
+footer .copyright {
+	margin: 2em auto;
+	width: 200px;
+}
+
+@media (max-width: 800px) {}
+@media (max-width: 500px) {}
 
 
 /*
