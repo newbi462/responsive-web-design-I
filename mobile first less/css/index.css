@@ -313,6 +313,22 @@ nav a:hover {
   text-decoration: none;
   color: black;
 }
+.subheader div span:hover {
+  background: #e1eced;
+  color: #18CAE6;
+  text-shadow: 2px 1px white;
+  border: 1px solid #18CAE6;
+}
+.subheader img {
+  display: none;
+}
+@media (min-width: 800px) {
+  .subheader img {
+    display: inline-block;
+    float: right;
+  }
+}
+/*main content*/
 /*
 @media @tablet {}
 @media @desktop {}
