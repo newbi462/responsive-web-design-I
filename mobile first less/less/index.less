@@ -366,11 +366,95 @@ nav a:hover {
 }
 
 
+/*Footer*/
+footer {
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
 
+  margin: 20px 0px;
+  border-top: 1px solid black;
 
+  padding: 30px 0px;
+  @media @tablet {}
+  @media @desktop {}
+}
 
+footer address {
+  width: 175px;
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+  @media @tablet {}
+  @media @desktop {}
+}
 
+footer address span {
+  margin: 1em 0 0 0;
+  @media @tablet {}
+  @media @desktop {}
+}
 
+footer .copyright {
+  margin: 2em auto;
+	width: 200px;
+  @media @tablet {}
+  @media @desktop {}
+}
+
+footer .itembox {
+  display: flex;
+  flex-flow: wrap;
+  flex-flow: column-reverse;
+  @media @tablet {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  @media @desktop {}
+}
+
+footer .itembox .arealeft {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  @media @tablet {
+    width: 46%;
+  }
+  @media @desktop {
+    width: 415px;
+  	margin: 10px 0 40px 0;
+  }
+}
+
+footer .itembox .arealeft ul {
+  list-style-type: square;
+	padding: 20px;
+  @media @tablet {}
+  @media @desktop {}
+}
+
+footer .itembox .arealeft ul li {
+	padding: 7px;
+  @media @tablet {}
+  @media @desktop {}
+}
+
+footer .itembox .arearight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media @tablet {
+    width: 46%;
+
+  }
+  @media @desktop {}
+}
+
+footer .itembox .services-info-img {
+  width: 100%;
+  @media @tablet {}
+  @media @desktop {}
+}
 
 /*
 @media @tablet {}

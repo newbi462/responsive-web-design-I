@@ -449,6 +449,75 @@ nav a:hover {
   color: #18CAE6;
   text-shadow: 1px 1px silver;
 }
+/*Footer*/
+footer {
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+  margin: 20px 0px;
+  border-top: 1px solid black;
+  padding: 30px 0px;
+}
+footer address {
+  width: 175px;
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+}
+footer address span {
+  margin: 1em 0 0 0;
+}
+footer .copyright {
+  margin: 2em auto;
+  width: 200px;
+}
+footer .itembox {
+  display: flex;
+  flex-flow: wrap;
+  flex-flow: column-reverse;
+}
+@media (min-width: 500px) {
+  footer .itembox {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+footer .itembox .arealeft {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+@media (min-width: 500px) {
+  footer .itembox .arealeft {
+    width: 46%;
+  }
+}
+@media (min-width: 800px) {
+  footer .itembox .arealeft {
+    width: 415px;
+    margin: 10px 0 40px 0;
+  }
+}
+footer .itembox .arealeft ul {
+  list-style-type: square;
+  padding: 20px;
+}
+footer .itembox .arealeft ul li {
+  padding: 7px;
+}
+footer .itembox .arearight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  footer .itembox .arearight {
+    width: 46%;
+  }
+}
+footer .itembox .services-info-img {
+  width: 100%;
+}
 /*
 @media @tablet {}
 @media @desktop {}
