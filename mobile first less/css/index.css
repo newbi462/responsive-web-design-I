@@ -449,6 +449,9 @@ nav a:hover {
   color: #18CAE6;
   text-shadow: 1px 1px silver;
 }
+.middle-img {
+  width: 100%;
+}
 /*Footer*/
 footer {
   display: flex;
