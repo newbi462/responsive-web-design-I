@@ -1,3 +1,438 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*BASE CODE OF PROJECT*/
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+body {
+	width: 876px;
+	margin: auto;
+}
+@media (max-width: 800px) {
+  body {
+  	width: 96%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+  	width: 95%;
+  }
+}
+
+/*The header and sub header banner area*/
+header {
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid black;
+}
+
+header .floatnav {
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 876px;
+	display: flex;
+}
+
+header .services-header-img {
+	margin: 107px 0 0 0;
+	width: 876px;
+}
+
+header .h1notmian {
+	font-size: 30px;
+	margin: 25px 0 15px 0;
+}
+
+nav {
+	width: 876px;
+	display: flex;
+	justify-content: space-between;
+	margin: 35px 0px;
+	padding-right: 85px;
+}
+
+nav a {
+	color: silver;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 14px;
+	text-shadow: 2px 1px white;
+	border: 1px solid white;
+}
+
+nav a:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+.logo {
+	margin: 30px 0px;
+}
+
+.subheader {
+	display: inline-block;
+	width: 100%;
+	margin: 115px 0 0 0
+}
+
+.subheader div {
+	width: 300px;
+	display: inline-block;
+	margin: 70px 10px 50px 120px;
+	text-align: center;
+	font-size: 78px;
+}
+
+.subheader div span {
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 6px 25px;
+	margin: 0px auto;
+	display: block;
+	width: 155px;
+	box-sizing: border-box;
+}
+
+.subheader div a {
+	text-decoration: none;
+	color: black;
+}
+
+.subheader div span:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+.subheader img {
+	float: right;
+}
+
+@media (max-width: 800px) {
+  header .floatnav {
+    width: 100%;
+    flex-flow: column-reverse;
+    justify-content: center;
+  }
+  header .floatnav a {
+    margin: 0 auto;
+  }
+  header .services-header-img {
+  	width: 100%;
+  }
+
+  .logo {
+    margin: 20px auto 10px auto;
+  }
+  nav {
+    width: 100%;
+    padding: 0 2% 0 0;
+    margin: 0;
+  }
+
+  .subheader {
+    display: flex;
+    justify-content: center;
+  }
+  .subheader div {
+    margin: 40px auto 30px auto;
+  }
+  .subheader img {
+  	display: none;
+  }
+
+}
+@media (max-width: 500px) {
+  header .services-header-img {
+  	margin: 350px 0 0 0;
+  }
+  header .h1notmian {
+  	font-size: 30px;
+  	margin: 20px 0 10px 0;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  nav a {
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .subheader {
+    margin-top: 350px;
+  }
+  .subheader div {
+    margin: 20px auto 30px auto;
+  }
+}
 
 
+/*main content*/
+.area1 a, .area2 a {
+	color: black;
+	text-decoration: none;
+}
+.area1 a:hover, .area2 a:hover {
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
+}
+
+.area1 {
+	display: flex;
+}
+
+.area1 div {
+	margin: 30px 0px;
+}
+
+.area2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.area2 div {
+	margin: 30px 0px;
+	width: 288px;
+}
+
+.area3 {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.area3 .itembox {
+	background: #f4f3f4;
+	border: 1px solid black;
+	width: 415px;
+	padding: 20px;
+	margin: 20px 0;/*this 0 is over riding my responsinve*/
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.area3 .itembox a {
+	border: 1px solid black;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	padding: 8px;
+	margin-top: 20px;
+	width: 120px;
+	font-size: 0.75em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.area3 .itembox a:hover {
+	border: 1px solid #18CAE6;
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
+}
+
+@media (max-width: 800px) {
+  .area1 {
+  	justify-content: space-around;
+  }
+  .area1 div {
+  	margin: 30px 5%;
+    width: 95%;
+  }
+  .area2 {
+  	display: flex;
+  	justify-content: space-around;
+  }
+  .area2 div {
+  	margin: 30px 5%;
+    padding: 0 20px 0 0;
+    width: 95%;
+  }
+
+  .area3 .itembox {
+    width: 48%
+  }
+}
+@media (max-width: 500px) {
+  .area1 {
+  	flex-flow: column;
+    margin: 30px 0;
+  }
+  .area1 div {
+  	margin: 30px 0;
+    width: 100%;
+  }
+  .middle-img {
+    width: 100%;
+  }
+  .area2 {
+  	flex-flow: column;
+  }
+  .area2 div {
+  	margin: 30px 0;
+    width: 100%;
+  }
+  .area3 .itembox {
+    width: 97%;
+    margin: 15px auto;
+  }
+}
+
+
+/*Footer*/
+footer {
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+
+	margin: 20px 0px;
+	border-top: 1px solid black;
+
+	padding: 30px 0px;
+}
+
+footer address {
+	width: 175px;
+
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+}
+
+footer address span {
+	margin: 1em 0 0 0;
+}
+
+footer .copyright {
+	margin: 2em auto;
+	width: 200px;
+}
+
+footer .itembox {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+footer .itembox .arealeft {
+	width: 415px;
+	margin: 10px 0 40px 0;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+footer .itembox .arealeft ul {
+	list-style-type: square;
+	padding: 20px;
+}
+footer .itembox .arealeft ul li {
+	padding: 7px;
+}
+
+@media (max-width: 800px) {
+  footer .itembox .arealeft {
+  	width: 46%;
+  }
+  footer .itembox .arearight {
+  	width: 46%;
+    display: flex;
+    align-items: center;
+  }
+  footer .itembox .services-info-img {
+  	width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  footer .itembox {
+  	flex-flow: column-reverse;
+  }
+  footer .itembox .arealeft {
+  	width: 100%;
+  }
+  footer .itembox .arearight {
+  	width: 100%;
+  }
+}
+
+
+/*
+@media (max-width: 800px) {}
+@media (max-width: 500px) {}
+
+@media only screen and (max-device-width: 800px) {}
+@media only screen and (max-device-width: 500px) {}
+*/
